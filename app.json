@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "Tdotbot",
+    "slug": "tdotbot",
+    "version": "1.2.0",
+    "orientation": "portrait",
+    "icon": "./assets/tdotbot-icon.png",
+    "scheme": "tdotbot",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.tdotrivers.tdotbot",
+      "versionCode": 7,
+      "adaptiveIcon": {
+        "backgroundColor": "#020826",
+        "foregroundImage": "./assets/tdotbot-adaptive-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications",
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Tdotbot accesses your calendar only when you approve a calendar tool."
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Tdotbot searches contacts only when you approve a contact tool."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Tdotbot reads your location only when you approve a location tool."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Tdotbot uses photos you choose as context for your requests.",
+          "cameraPermission": "Tdotbot uses the camera when you choose to attach a photo.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true,
+            "buildArchs": ["arm64-v8a"]
+          }
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+server/browser-data/
+server/logs/
+.claude/
+.expo/
+.env
+dist/
+android/
+ios/
+npm-debug.log*
